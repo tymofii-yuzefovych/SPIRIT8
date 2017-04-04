@@ -3,4 +3,12 @@ $(document).ready(function() {
         $(this).toggleClass('open');
         $(".dropdown").toggleClass("hiden")
     });
+
+    $(document).on('click', 'a', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
 });
