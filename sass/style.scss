@@ -180,7 +180,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1120px) {
     .welcome {
         margin-top: 150px;
         padding-bottom: 200px;
@@ -225,6 +225,123 @@ a:hover {
             span {
                 font-size: 3.4rem;
                 color: #222;
+            }
+        }
+        .line {
+            margin-top: 3%;
+            width: 100px;
+            min-height: 5px;
+            background-color: #fcac45;
+        }
+        p {
+            margin-top: 3%;
+            font-size: 1.8rem;
+            text-align: left;
+        }
+        .skills {
+            p {
+                span {
+                    margin-left: 5px;
+                    text-transform: none;
+                    color: #5a5a5a;
+                    font-weight: 600;
+                }
+            }
+            img {
+                padding-bottom: 3px;
+            }
+            button {
+                display: block;
+                padding: 15px 20px;
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .right-side {
+        .line {
+            margin-top: 3%;
+            margin-left: 75px;
+        }
+        p {
+            margin-left: 14%;
+        }
+        .skills {
+            button {
+                margin-top: 40px;
+                margin-left: 13%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .right-side {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .line {
+        margin-left: 35px;
+        margin-top: 3%;
+    }
+    p {
+        margin-left: 8%;
+    }
+    .skills {
+        button {
+            margin-top: 30px;
+            margin-left: 8%;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .right-side {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        .line {
+            margin-left: 160px;
+            margin-top: 3%;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .right-side {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        .line {
+            margin-left: 160px;
+            margin-top: 3%;
+        }
+        .skills {
+            button {
+                margin-top: 25px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .right-side {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        .line {
+            display: none;
+        }
+        p {
+            text-align: center;
+            padding-top: 4%;
+        }
+        .skills {
+            button {
+                margin-top: 25px;
+                margin: 0 auto;
             }
         }
     }
