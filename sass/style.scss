@@ -18,7 +18,7 @@
     
     h2 {
         text-transform: uppercase;
-        font-size: 4.4rem;
+        font-size: 3.4rem;
     }
     
     .dark-theme {
@@ -27,7 +27,7 @@
     }
     
     .head {
-        padding-top: 60px;
+        padding-top: 50px;
     }
     
     .logo {
@@ -36,6 +36,7 @@
             color: #fff;
             font-size: 24px;
             text-transform: uppercase;
+            padding-left: 15px;
         }
     }
     
@@ -93,7 +94,7 @@
         background: #fcac45;
         border-radius: 5px;
         opacity: 1;
-        left: 48vw;
+        left: 47vw;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -139,7 +140,7 @@
     
     .dropdown {
         display: none;
-        padding-left: calc(50% - 65px);
+        padding-left: calc(50% - 50px);
         & ul {
             list-style: none;
             & li {
@@ -162,9 +163,9 @@
     }
     
     .welcome {
-        margin-top: 200px;
+        margin-top: 100px;
         text-align: center;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
         & h1 {
             color: #999;
             font-size: 4.4rem;
@@ -197,11 +198,14 @@
             }
         }
         .right-side {
-            margin-top: 100px;
+            margin: 75px 0;
             text-align: center;
             span {
                 text-transform: uppercase;
                 font-size: 2rem;
+            }
+            .line {
+                display: none;
             }
             h2 {
                 margin: 0;
@@ -214,16 +218,11 @@
                     color: #222;
                 }
             }
-            .line {
-                margin-top: 3%;
-                width: 100px;
-                min-height: 5px;
-                background-color: #fcac45;
-            }
             p {
                 margin-top: 3%;
                 font-size: 1.8rem;
-                text-align: left;
+                text-align: center;
+                padding-top: 4%;
             }
             .skills {
                 p {
@@ -238,11 +237,10 @@
                     padding-bottom: 3px;
                 }
                 button {
-                    display: block;
-                    padding: 15px 20px;
-                    text-align: left;
                     text-transform: uppercase;
                     font-weight: 600;
+                    margin: 0 auto;
+                    margin-top: 25px;
                 }
             }
         }
@@ -265,7 +263,7 @@
             }
         }
         .persone {
-            margin-top: 100px;
+            margin-top: 75px;
             text-align: center;
             .image {
                 margin: 0 auto;
@@ -285,7 +283,7 @@
             p {
                 margin: 0;
                 margin-top: 20px;
-                padding-bottom: 150px;
+                padding-bottom: 50px;
                 font-size: 1.4rem;
                 color: #ababab;
             }
@@ -300,7 +298,7 @@
         }
         .head {
             text-align: center;
-            margin-bottom: 100px;
+            margin-bottom: 75px;
             h2 {
                 color: #222;
                 span {
@@ -317,6 +315,7 @@
                 background-color: #fcac45;
             }
             p {
+                padding-top: 30px;
                 margin-top: 4%;
                 font-size: 1.6rem;
                 font-style: italic;
@@ -342,13 +341,14 @@
             }
             p {
                 margin-top: 20px;
-                padding-bottom: 150px;
+                padding-bottom: 50px;
                 font-size: 1.4rem;
                 color: #ababab;
             }
         }
     }
     
+    // client
     #client {
         .row {
             margin: 0;
@@ -379,7 +379,7 @@
             img {
                 width: 100%;
                 display: block;
-                margin: 75px auto;
+                margin: 30px auto;
             }
         }
     }
@@ -426,9 +426,10 @@
             .right {
                 input[type="email"] {
                     height: 30px;
-                    width: 60%;
+                    width: 100%;
                     border: 1px solid #222;
                     border-radius: 5px;
+                    padding: 5px;
                 }
             }
             .left {
@@ -437,21 +438,28 @@
                     width: 100%;
                     border: 1px solid #222;
                     border-radius: 5px;
+                    padding: 5px;
                 }
             }
             .area {
                 margin-top: 2%;
                 textarea {
-                    width: 76%;
+                    width: 100%;
                     resize: none;
                     border: 1px solid #222;
                     border-radius: 5px;
+                    padding: 10px;
                 }
                 button {
+                    display: block;
+                    margin: 0 auto;
                     text-transform: uppercase;
                     width: 160px;
+                    padding: 10px 35px;
+                    margin-right: 24%;
                     background-color: #fcac45;
                     border: none;
+                    border-radius: 5px;
                     font-size: 1.6rem;
                     font-weight: 600;
                     color: #fff;
@@ -462,186 +470,100 @@
         }
     }
     
-    @media only screen and (min-width:1200px) {
-        .right-side {
-            .line {
-                margin-top: 3%;
-                margin-left: 75px;
-            }
-            p {
-                margin-left: 14%;
-            }
-            .skills {
-                button {
-                    margin-top: 40px;
-                    margin-left: 13%;
-                }
-            }
-        }
-        #contact {
-            .forms {
-                input[type="email"] {
-                    width: 100%;
-                }
-                .left {
-                    padding-left: 20%;
-                    input[type="text"] {
-                        width: 100%;
-                    }
-                }
-                .area {
-                    padding-left: 20%;
-                    margin-top: 2%;
-                    textarea {
-                        width: 76%;
-                        height: 70px;
-                    }
-                    button {
-                        display: block;
-                        float: right;
-                        width: 120px;
-                        margin-right: 24%;
-                        padding: 10px 35px;
-                    }
-                }
-            }
+    // footer
+    footer {
+        h5 {
+            text-transform: uppercase;
+            color: #999;
+            font-size: 1.1rem;
+            margin: 15px;
+            text-align: center;
         }
     }
     
-    @media only screen and (max-width:1200px) {
-        .welcome {
-            margin-top: 150px;
-            padding-bottom: 200px;
-        }
-        .right-side {
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-        .line {
-            margin-left: 35px;
-            margin-top: 3%;
-        }
-        p {
-            margin-left: 8%;
-        }
-        .skills {
-            button {
-                margin-top: 30px;
-                margin-left: 8%;
-            }
-        }
-        #team {
-            .persone {
-                p {
-                    padding-bottom: 75px;
-                }
-            }
-        }
-        #contact {
-            .forms {
-                input[type="email"] {
-                    width: 100%;
-                }
-                .left {
-                    padding-left: 20%;
-                    input[type="text"] {
-                        width: 100%;
-                    }
-                }
-                .area {
-                    padding-left: 20%;
-                    margin-top: 2%;
-                    textarea {
-                        width: 76%;
-                        height: 70px;
-                    }
-                    button {
-                        display: block;
-                        float: right;
-                        width: 120px;
-                        margin-right: 24%;
-                        padding: 10px 35px;
-                    }
-                }
-            }
+    // back to top
+    .cd-top {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        /* image replacement properties */
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        background: #fcac45 url(../img/cd-top-arrow.svg) no-repeat center 50%;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+    }
+    
+    .cd-top.cd-is-visible,
+    .cd-top.cd-fade-out,
+    .no-touch .cd-top:hover {
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+    }
+    
+    .cd-top.cd-is-visible {
+        /* the button becomes visible */
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .cd-top.cd-fade-out {
+        /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+        opacity: .5;
+    }
+    
+    .no-touch .cd-top:hover {
+        background-color: #fcac45;
+        opacity: 1;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .cd-top {
+            right: 20px;
+            bottom: 20px;
         }
     }
     
-    @media only screen and (max-width:992px) {
+    @media only screen and (min-width: 1024px) {
+        .cd-top {
+            height: 60px;
+            width: 60px;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+    
+    @media only screen and (min-width:768px) {
         .logo {
-            padding-left: 10px;
+            a {
+                padding-left: 80px;
+            }
         }
         .welcome {
             margin-top: 50px;
             text-align: center;
             padding: 0 10px;
             padding-bottom: 75px;
-        }
-        .right-side {
-            margin-top: 75px;
-            margin-bottom: 75px;
-            .line {
-                margin-left: 160px;
-                margin-top: 3%;
-            }
-        }
-        #team {
-            .persone {
-                p {
-                    padding-bottom: 75px;
+            .arrow {
+                margin-top: 180px;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #666;
+                border-radius: 50%;
+                img {
+                    margin-top: 10px;
                 }
             }
-        }
-        #services {
-            .service {
-                p {
-                    padding-bottom: 75px;
-                }
-            }
-        }
-        #nav-icon1 span,
-        #nav-icon3 span,
-        #nav-icon4 span {
-            left: 55vw;
-        }
-        #contact {
-            .forms {
-                input[type="email"] {
-                    width: 100%;
-                }
-                .left {
-                    padding-left: 20%;
-                    input[type="text"] {
-                        width: 100%;
-                    }
-                }
-                .area {
-                    padding-left: 20%;
-                    margin-top: 2%;
-                    textarea {
-                        width: 76%;
-                        height: 70px;
-                    }
-                    button {
-                        display: block;
-                        margin-left: 27%;
-                        width: 120px;
-                        padding: 10px 35px;
-                    }
-                }
-            }
-        }
-    }
-    
-    @media only screen and (max-width:768px) {
-        .logo {
-            padding-left: 40px;
-        }
-        .welcome {
-            margin-top: 50px;
-            text-align: center;
-            padding: 0 10px;
-            padding-bottom: 75px;
         }
         .right-side {
             margin-top: 75px;
@@ -689,27 +611,28 @@
         }
         #contact {
             .forms {
-                input[type="email"] {
-                    width: 100%;
+                .right {
+                    input[type="email"] {
+                        width: 60%;
+                    }
                 }
                 .left {
+                    padding-left: 20%;
                     input[type="text"] {
                         width: 100%;
                     }
                 }
-                .right {
-                    margin-top: 2%;
-                }
                 .area {
+                    padding-left: 20%;
                     margin-top: 2%;
                     textarea {
-                        width: 100%;
+                        width: 77%;
                         height: 70px;
                     }
                     button {
                         display: block;
                         width: 120px;
-                        margin: 0 auto;
+                        left: 78%;
                         padding: 10px 35px;
                     }
                 }
@@ -717,77 +640,140 @@
         }
     }
     
-    @media only screen and (max-width:480px) {
+    @media only screen and (min-width:992px) {
+        h2 {
+            font-size: 4.4rem;
+        }
+        .logo {
+            a {
+                padding-left: 10px;
+            }
+        }
+        .welcome {
+            margin-top: 50px;
+            text-align: center;
+            padding: 0 10px;
+            padding-bottom: 75px;
+        }
         .right-side {
             margin-top: 75px;
             margin-bottom: 75px;
             .line {
-                display: none;
-            }
-            p {
-                text-align: center;
-                padding-top: 4%;
-            }
-            .skills {
-                button {
-                    margin-top: 25px;
-                    margin: 0 auto;
-                }
+                margin-left: 160px;
+                margin-top: 3%;
             }
         }
         #team {
             .persone {
                 p {
-                    padding-bottom: 50px;
+                    padding-bottom: 75px;
                 }
             }
         }
         #services {
-            .head {
-                p {
-                    padding-top: 30px;
-                    margin: 0;
+            .client {
+                img {
+                    margin: 75px auto;
                 }
             }
             .service {
                 p {
-                    padding-bottom: 50px;
+                    padding-bottom: 75px;
                 }
-            }
-        }
-        .client {
-            img {
-                margin: 50px auto;
             }
         }
         #nav-icon1 span,
         #nav-icon3 span,
         #nav-icon4 span {
-            left: 45vw;
+            left: 55vw;
         }
         #contact {
             .forms {
-                input[type="email"] {
-                    width: 100%;
+                .right {
+                    input[type="email"] {
+                        width: 60%;
+                    }
                 }
                 .left {
+                    padding-left: 20%;
                     input[type="text"] {
                         width: 100%;
                     }
                 }
-                .right {
-                    margin-top: 2%;
-                }
                 .area {
+                    padding-left: 20%;
                     margin-top: 2%;
                     textarea {
-                        width: 100%;
+                        width: 76%;
                         height: 70px;
                     }
                     button {
                         display: block;
+                        left: 78%;
                         width: 120px;
-                        margin: 0 auto;
+                        padding: 10px 35px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width:1200px) {
+        .logo {
+            a {
+                margin-left: 20px;
+            }
+        }
+        .welcome {
+            margin-top: 200px;
+            padding-bottom: 100px;
+        }
+        .right-side {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .line {
+            margin-left: 35px;
+            margin-top: 3%;
+        }
+        .skills {
+            button {
+                margin-top: 30px;
+                margin-left: 8%;
+            }
+        }
+        #team {
+            .persone {
+                p {
+                    padding-bottom: 75px;
+                }
+            }
+        }
+        #contact {
+            .forms {
+                .right {
+                    input[type="email"] {
+                        width: 60%;
+                    }
+                }
+                .left {
+                    padding-left: 20%;
+                    input[type="text"] {
+                        width: 100%;
+                    }
+                }
+                .area {
+                    padding-left: 20%;
+                    margin-top: 2%;
+                    textarea {
+                        width: 76%;
+                        height: 70px;
+                    }
+                    button {
+                        display: block;
+                        float: right;
+                        width: 120px;
+                        margin-right: 24%;
                         padding: 10px 35px;
                     }
                 }
