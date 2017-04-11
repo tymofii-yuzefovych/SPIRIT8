@@ -1,2 +1,4 @@
 # SPIRIT8
-landing page
+Landing page
+
+https://tymofii-yuzefovych.github.io/SPIRIT8/
